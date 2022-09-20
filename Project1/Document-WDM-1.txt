@@ -1,0 +1,20 @@
+startGame
+
+
+move ball 
+
+
+To move this element, just change the left/top attributes using code:
+
+document.getElementById("x").style.top = "10px";
+
+
+Find Random Angle between To Start Ball Initially
+ Math.pi/4 *  180/Math.pi and  3*Math.pi/4 * 180/Math.pi
+ 
+(Math.random()* 90  + 45 )*3.14/180
+((Math.random() * 90) + 45) *Math.PI/180
+
+Pending -- if brick is hit remove and all  bricks hit update score
+. Then you can finish the program by bouncing and removing bricks when hit. 
+When hitting a brick, you simply set the visibility="hidden" for the brick and dy=-dy.
