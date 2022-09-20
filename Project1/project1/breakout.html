@@ -10,7 +10,7 @@
       <table>
         <tr><th colspan="3"><h1>Breakout Game</h1></th></tr>
         <tr>
-          <td><input type="button" value="Start" onclick="startGame();" /></td>
+          <td><input type="button" value="Start" onclick="if (!is_running) {startGame()};" /></td>
           <td>
             <label> Level:
               <select id="level">
