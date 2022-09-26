@@ -153,9 +153,9 @@ function startGame () {
     started = true
     ballSpeed = getBallSpeed()
     /* as said by prof we need angle between 45 (pi/4) and 135 (pi*3/4) */
-    kickedAngle = ((0 * 90) + 45) *Math.PI/180
+    kickedAngle = ((Math.random() * 90) + 45) *Math.PI/180
 
-    if (0 > 0.5){
+    if (Math.random() > 0.5){
         vx = -ballSpeed*kickedAngle
     }else{
         vx = ballSpeed*kickedAngle
